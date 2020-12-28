@@ -24,7 +24,7 @@ object InputMethodUtils {
     fun openInputMethod(editText: EditText) {
        WindowsHelper.mLayoutParams.run {
             // 更改flags，并刷新布局，让系统浮窗获取焦点
-            flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
+            flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or WindowManager.LayoutParams.FLAG_SECURE
            WindowsHelper.updateViewLayout()
         }
         Handler(Looper.getMainLooper()).postDelayed({
@@ -43,7 +43,7 @@ object InputMethodUtils {
     fun closedInputMethod() {
         WindowsHelper.mLayoutParams.run {
             flags =
-                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS or WindowManager.LayoutParams.FLAG_SECURE
             WindowsHelper.updateViewLayout()
         }
     }

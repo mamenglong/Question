@@ -86,7 +86,7 @@ object WindowsHelper {
         mLayoutParams.format = PixelFormat.RGBA_8888   //窗口透明
         mLayoutParams.gravity = Gravity.START or Gravity.TOP  //窗口位置
         mLayoutParams.flags =
-            WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+            WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS or WindowManager.LayoutParams.FLAG_SECURE
         mLayoutParams.width = displaySizePoint.x/3 *2
         mLayoutParams.height = displaySizePoint.y/2
         // 可以修改View的初始位置
