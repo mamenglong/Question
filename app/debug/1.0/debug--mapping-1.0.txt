@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# min_api: 29
-# pg_map_id: edb70b1
+# min_api: 30
+# pg_map_id: 2cfb44a
 # common_typos_disable
 android.support.v4.app.RemoteActionCompatParcelizer -> android.support.v4.app.RemoteActionCompatParcelizer:
     11:11:void <init>() -> <init>
@@ -15524,29 +15524,29 @@ com.ml.question.NotificationManager -> b.b.a.b:
     com.ml.question.NotificationManager INSTANCE -> e
     boolean isCreateChannel -> a
     boolean isRegister -> b
-    28:119:void <clinit>() -> <clinit>
-    28:28:void <init>() -> <init>
-    38:104:android.app.Notification buildNotification() -> a
+    27:118:void <clinit>() -> <clinit>
+    27:27:void <init>() -> <init>
+    37:103:android.app.Notification buildNotification() -> a
     android.app.NotificationManager getNotificationManager() -> b
-    111:115:android.app.PendingIntent getPendingIntent(java.lang.String) -> c
-    171:189:void goOpenNotificationPermission() -> d
-    167:168:boolean isNotificationEnable() -> e
-    138:146:void register() -> f
-    148:164:void shouldOpenNotificationPermission(androidx.fragment.app.FragmentActivity) -> g
-    107:109:void showNotification() -> h
+    110:114:android.app.PendingIntent getPendingIntent(java.lang.String) -> c
+    170:188:void goOpenNotificationPermission() -> d
+    166:167:boolean isNotificationEnable() -> e
+    137:145:void register() -> f
+    147:163:void shouldOpenNotificationPermission(androidx.fragment.app.FragmentActivity) -> g
+    106:108:void showNotification() -> h
 com.ml.question.NotificationManager$mReceiver$1 -> b.b.a.b$a:
-    119:119:void <init>() -> <init>
-    121:135:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    118:118:void <init>() -> <init>
+    120:134:void onReceive(android.content.Context,android.content.Intent) -> onReceive
 com.ml.question.NotificationManager$notificationManager$2 -> b.b.a.b$b:
     com.ml.question.NotificationManager$notificationManager$2 INSTANCE -> a
-    28:28:java.lang.Object invoke() -> a
-    33:33:android.app.NotificationManager invoke() -> b
+    27:27:java.lang.Object invoke() -> a
+    32:32:android.app.NotificationManager invoke() -> b
 com.ml.question.NotificationManager$shouldOpenNotificationPermission$1 -> b.b.a.b$c:
     com.ml.question.NotificationManager$shouldOpenNotificationPermission$1 INSTANCE -> a
-    155:156:void onClick(android.content.DialogInterface,int) -> onClick
+    154:155:void onClick(android.content.DialogInterface,int) -> onClick
 com.ml.question.NotificationManager$shouldOpenNotificationPermission$2 -> b.b.a.b$d:
     androidx.fragment.app.FragmentActivity $fragmentActivity -> a
-    158:160:void onClick(android.content.DialogInterface,int) -> onClick
+    157:159:void onClick(android.content.DialogInterface,int) -> onClick
 com.ml.question.WindowsHelper -> b.b.a.c:
     android.graphics.Point displaySizePoint -> e
     boolean mIsTouching -> m
@@ -15567,10 +15567,10 @@ com.ml.question.WindowsHelper -> b.b.a.c:
     android.view.WindowManager$LayoutParams mLayoutParams -> c
     33:65:void <clinit>() -> <clinit>
     33:33:void <init>() -> <init>
-    324:338:void show() -> A
-    390:408:void showOpenPermissionDialog(androidx.fragment.app.FragmentActivity) -> B
-    312:318:void updateViewLayout() -> C
-    363:366:void visibleWindowView() -> D
+    325:339:void show() -> A
+    391:409:void showOpenPermissionDialog(androidx.fragment.app.FragmentActivity) -> B
+    313:319:void updateViewLayout() -> C
+    364:367:void visibleWindowView() -> D
     33:33:com.ml.question.databinding.FloatViewBinding access$getFloatViewBinding$p(com.ml.question.WindowsHelper) -> a
     33:33:float access$getLastDownX$p(com.ml.question.WindowsHelper) -> b
     33:33:float access$getLastDownY$p(com.ml.question.WindowsHelper) -> c
@@ -15578,22 +15578,22 @@ com.ml.question.WindowsHelper -> b.b.a.c:
     33:33:boolean access$isLongTouch(com.ml.question.WindowsHelper) -> e
     33:33:void access$setLastDownX$p(com.ml.question.WindowsHelper,float) -> f
     33:33:void access$setLastDownY$p(com.ml.question.WindowsHelper,float) -> g
-    374:375:boolean checkFloatWindowPermission(android.content.Context) -> h
-    414:415:void destroy() -> i
-    344:348:void dismissWindow() -> j
+    375:376:boolean checkFloatWindowPermission(android.content.Context) -> h
+    415:416:void destroy() -> i
+    345:349:void dismissWindow() -> j
     54:54:boolean getMIsLongTouch() -> k
     42:42:android.view.WindowManager$LayoutParams getMLayoutParams() -> l
     57:57:long[] getMPattern() -> m
     55:55:android.os.Vibrator getMVibrator() -> n
-    379:384:void gotoSetting(androidx.fragment.app.FragmentActivity) -> o
-    354:357:void hideWindowView() -> p
+    380:385:void gotoSetting(androidx.fragment.app.FragmentActivity) -> o
+    355:358:void hideWindowView() -> p
     78:100:void init() -> q
     103:109:void initDefaultView() -> r
-    113:269:void initDefaultViewListener() -> s
-    285:288:boolean isClick(android.view.MotionEvent) -> t
-    274:275:boolean isLongTouch() -> u
+    113:270:void initDefaultViewListener() -> s
+    286:289:boolean isClick(android.view.MotionEvent) -> t
+    275:276:boolean isLongTouch() -> u
     60:61:void log(java.lang.String) -> v
-    302:309:void removeView() -> w
+    303:310:void removeView() -> w
     54:54:void setMIsLongTouch(boolean) -> x
     53:53:void setMIsTouching(boolean) -> y
     52:52:void setMLastDownTime(long) -> z
@@ -15611,28 +15611,28 @@ com.ml.question.WindowsHelper$initDefaultViewListener$2$1 -> b.b.a.c$b$a:
     186:197:void run() -> run
 com.ml.question.WindowsHelper$initDefaultViewListener$3 -> b.b.a.c$c:
     com.ml.question.WindowsHelper$initDefaultViewListener$3 INSTANCE -> a
-    233:237:void onClick(android.view.View) -> onClick
+    233:238:void onClick(android.view.View) -> onClick
 com.ml.question.WindowsHelper$initDefaultViewListener$4 -> b.b.a.c$d:
     com.ml.question.WindowsHelper$initDefaultViewListener$4 INSTANCE -> a
-    239:240:void onClick(android.view.View) -> onClick
+    240:241:void onClick(android.view.View) -> onClick
 com.ml.question.WindowsHelper$initDefaultViewListener$5 -> b.b.a.c$e:
     com.ml.question.WindowsHelper$initDefaultViewListener$5 INSTANCE -> a
-    242:245:void onClick(android.view.View) -> onClick
+    243:246:void onClick(android.view.View) -> onClick
 com.ml.question.WindowsHelper$initDefaultViewListener$6$1 -> b.b.a.c$f:
-    247:247:void <init>() -> <init>
-    252:253:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldOverrideUrlLoading
+    248:248:void <init>() -> <init>
+    253:254:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest) -> shouldOverrideUrlLoading
 com.ml.question.WindowsHelper$initDefaultViewListener$7 -> b.b.a.c$g:
     com.ml.question.WindowsHelper$initDefaultViewListener$7 INSTANCE -> a
-    267:268:void onClick(android.view.View) -> onClick
+    268:269:void onClick(android.view.View) -> onClick
 com.ml.question.WindowsHelper$showOpenPermissionDialog$1 -> b.b.a.c$h:
     androidx.fragment.app.FragmentActivity $context -> a
-    394:400:void onClick(android.content.DialogInterface,int) -> onClick
+    395:401:void onClick(android.content.DialogInterface,int) -> onClick
 com.ml.question.WindowsHelper$showOpenPermissionDialog$1$1 -> b.b.a.c$h$a:
     com.ml.question.WindowsHelper$showOpenPermissionDialog$1$1 INSTANCE -> a
-    396:398:void run() -> run
+    397:399:void run() -> run
 com.ml.question.WindowsHelper$showOpenPermissionDialog$2 -> b.b.a.c$i:
     androidx.fragment.app.FragmentActivity $context -> a
-    402:406:void onClick(android.content.DialogInterface,int) -> onClick
+    403:407:void onClick(android.content.DialogInterface,int) -> onClick
 com.ml.question.databinding.ActivityMainBinding -> b.b.a.d.a:
     androidx.constraintlayout.widget.ConstraintLayout rootView -> a
     android.widget.Button btnShowFloat -> c

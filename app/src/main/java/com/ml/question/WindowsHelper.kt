@@ -11,6 +11,7 @@ import android.os.*
 import android.provider.Settings
 import android.util.Log
 import android.view.*
+import android.view.inputmethod.EditorInfo
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings
 import android.webkit.WebView
@@ -231,12 +232,22 @@ object WindowsHelper {
 
         floatViewBinding.ivSearch.setOnClickListener {
             floatViewBinding.webView.apply {
-                loadUrl(floatViewBinding.editText.text.toString())
+                val url = "https://www.baidu.com/s?wd="+floatViewBinding.editText.text.toString()
+                loadUrl(url)
             }
             InputMethodUtils.closedInputMethod()
         }
         floatViewBinding.editText.setOnClickListener {
             InputMethodUtils.openInputMethod(floatViewBinding.editText)
+        }
+        floatViewBinding.editText.setOnEditorActionListener { _, actionId, _ ->
+            return@setOnEditorActionListener when (actionId) {
+                EditorInfo.IME_ACTION_SEARCH -> {
+                    floatViewBinding.ivSearch.performClick()
+                    true
+                }
+                else -> false
+            }
         }
         floatViewBinding.ivBack.setOnClickListener {
             if (floatViewBinding.webView.canGoBack()){
